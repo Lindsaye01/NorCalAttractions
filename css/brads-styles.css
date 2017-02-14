@@ -1,13 +1,24 @@
 body {
   background-color: #fff8d6;
   color: #333333;
-  font-family: sans-serif;
+  font-family:  sans-serif;
   padding: 0;
   margin: 0;
   line-height: 1.55;
   overflow-x: hidden;
 }
 
+<style type="text/css">
+
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+
+</style>
 .no-scroll {
   overflow: hidden;
 }
@@ -64,6 +75,7 @@ img {
 .main-navigation ul {
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .main-navigation ul:after {
@@ -75,14 +87,14 @@ img {
 
 .main-navigation li {
   list-style: none;
-  float: left;
+  display: inline-block;
   text-align: center;
   padding-right: 10px;
 }
 
 
 .main-navigation a {
-  display: block;
+  display: inline-block;
   text-decoration: none; /* removes underline of links */
   padding: 10px 16px;
   border-radius: 7px 7px 0 0;
@@ -227,7 +239,7 @@ img {
   .intro-hero p {
     font-size: 3vw;
   }
-}
+} /* end media query here */
 
 .row {
   overflow: hidden;
@@ -374,6 +386,49 @@ img {
   text-decoration: none;
 }
 
+/*bottom category links*/
+.bottom-links:link {
+    color: black;
+}
+
+.bottom-links:visited {
+    color: black;
+}
+
+.bottom-links:hover {
+    color: blue;
+}
+
+.bottom-links:active {
+    color: red;
+  }
+
+/*footer menu links*/
+.footer-links:link {
+    color: white;
+}
+
+.footer-links:visited {
+    color: white;
+}
+
+.footer-links:hover {
+    color: grey;
+}
+
+.footer-links:active {
+    color: red;
+  }
+
+.one-third p a{
+  color: blue;
+}
+
+.one-third p a:hover {
+  color: red;
+}
+
+
 .photo-link {
   display: inline-block;
   overflow: hidden;
@@ -409,39 +464,22 @@ img {
 .pet-item p {
   margin: 0 0 15px 0;
   font-size: 87%;
+  font-family: sans-serif;
 }
 
-.pet-item {
-  width: 50%;
-  padding: 15px 30px 50px 30px;
-  box-sizing: border-box;
-  float: left;
-  border-bottom: 1px dotted #CCC;
-  margin-bottom: 30px;
+.fa-picture-io {
+  color: black;
 }
 
-.pet-item h2 {
-  font-size: 1.5rem;
-  color: #020028;
-  margin: 0 0 5px 0;
-  font-weight: bold;
-  padding: 0;
-}
-
-.pet-item p {
-  margin: 0 0 15px 0;
-  font-size: 87%;
-}
-
-.attractions-by-name h3{
-  font-weight: bold;
-  text-decoration: underline;
+.fa-car {
+  color: black;
 }
 
 .attractions-by-city h3{
    font-weight: bold;
    text-decoration: underline;
-}
+ }
+
 
 .site-footer {
   margin-top: 80px;
@@ -500,6 +538,22 @@ img {
 
 .answer {
   display: none;
+}
+
+.answer p a{
+  color: blue;
+}
+
+.answer p a:hover{
+  color: red;
+}
+
+.link-special p a{
+  color: blue;
+}
+
+.link-special a:hover{
+  color: red;
 }
 
 .question {
@@ -562,7 +616,7 @@ img {
 }
 
 .contact-form {
-  background-color: #DDD;
+  background-color: ##fcd25f;
   padding: 20px;
 }
 
